@@ -7,9 +7,69 @@
     <title> Figuras geométricas </title>
 </head>
 <body>
-    <h1>
-        Figuras geométricas
-    </h1>
+    <header>
+        <h1>
+            Figuras geométricas
+        </h1>
+        <p> Este es mi primer taller práctico JavasScrip </p>
+    </header>
+
+    <section>
+ <!-- Aqui va la parte del cuadrado-->
+        <h2> Calcula y área y perimetro de un cuadrado</h2>
+        <form> 
+            <label for="InputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado: 
+            </label>
+            <input id ="InputCuadrado"type="number"/>
+            <button type="button" onclick="calcularPerimetroCuadrado() ">
+                Calcular el perímetro
+            </button>                
+            <button type="button" onclick="calcularAreaCuadrado() ">
+                Calcular el área
+            </button>
+        </form> 
+
+<!-- Aqui va la parte del triángulo-->
+<h2> Calcula y área y perimetro de un triángulo </h2>
+<form> 
+    <label for="InputTriangulo">
+        Escribe cuanto mide cada lado del triángulo: 
+    </label>
+    <input id ="InputTriangulo1"type="number"/>
+    <input id ="InputTriangulo2"type="number"/>
+    <input id ="InputTriangulo3"type="number"/>
+    <button type="button" onclick="calcularPerimetroTriangulo() ">
+        Calcular el perímetro
+    </button>                
+    <button type="button" onclick="calcularAreaTriangulo() ">
+        Calcular el área
+    </button>
+</form> 
+
+<!-- Aqui va la parte del circulo-->
+<h2> Calcula y área y perimetro de un circulo </h2>
+<form> 
+    <label for="InputCirculo">
+        Escribe cuanto mide el radio del círculo: 
+    </label>
+    <input id ="InputCirculo"type="number"/>
+    <button type="button" onclick="calcularPerimetroCirculo() ">
+        Calcular el perímetro
+    </button>                
+    <button type="button" onclick="calcularAreaCirculo() ">
+        Calcular el área
+    </button>
+    <button type="button" onclick="calcularDiametroCirculo() ">
+        Calcular el diametro 
+    </button>
+</form> 
+
+
+
+
+    </section>
+
     <script src="./figuras.js"></script>
     </script>    
 </body>
